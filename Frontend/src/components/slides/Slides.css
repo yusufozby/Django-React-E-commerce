@@ -1,0 +1,359 @@
+
+.slide-container {
+ 
+display: flex;
+
+width: 80%;
+padding: 50px 40px;
+
+margin:124px auto 0 ;
+flex-wrap: wrap;
+
+
+
+}
+
+
+#first-slogan,#second-slogan {
+    font-size: 2.75em;
+}
+#first-slogan {
+    color: #222;
+}
+#second-slogan{
+    color: #00693E;
+}
+.shop-now{
+    margin: 25px 0;
+    padding: 12px 2rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #00693E;
+    color: #fff;
+    cursor: pointer;
+  transition:background-color 0.2s ease;
+}
+.shop-now:hover {
+    background-color: #008200;
+}
+.slide-card {
+    box-shadow: 0 0 15px 3px #ccc;
+    width: 100%;
+    min-height: 400px;
+    padding: 20px;
+    border-radius: 5px;
+
+}
+.description {
+    color: #555;
+    font-size: 15px;
+    margin-top: 25px;
+}
+
+.slide-card-desc {
+    margin-top: 20px;
+}
+.slide-card-img-container {
+    height: 250px;
+ position: relative;
+    overflow: hidden;
+    z-index: 0;
+    
+    
+    
+    }
+.slide-img{ 
+  
+    position: absolute;
+    transition: 0.6s ease;
+    top:0;
+    z-index: 0;
+    height: 100%;
+  
+    
+}
+.first-slide {
+    left:0;
+}
+.second-slide {
+    left:100%;
+}
+.third-slide {
+    left:200%;
+}
+.slide-position-btn {
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+   color: #6082B6;
+   background: green;
+    background:none;
+    border: 0;
+    overflow: hidden;
+    font-size: 45px;
+    width: 45px;
+  height: 100%;
+   cursor: pointer;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+    
+    
+
+}
+.page-slide-container {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left:50%;
+    transform: translate(-50%,-50%);
+
+    top:85%;
+
+}
+.page-slide {
+    
+   margin: 0 10px;
+    background-color: #555;
+    width: 20px;
+height: 3px;
+}
+#active {
+    background-color: #fff;
+}
+
+
+#next {
+    right: 0;
+    z-index: 0;
+    
+}
+#prev {
+    left:0;
+  
+}
+.review-company {
+  color: white;
+    background: 	#FFAC1C;
+
+    padding: 8px 15px;
+    cursor: pointer;
+    margin: 5px 0;
+    border: 0;
+    border-radius: 3px;
+}
+.comment-container {
+    position: fixed;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+     transition: 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#open-comment {
+    z-index: 1;
+    opacity: 1;
+
+}
+#close-comment {
+  z-index: -1;
+  opacity: 0;
+}
+.comment-form {
+    padding:50px 15px;
+    width: 50%;
+  
+    border-radius: 10px;
+    background-color: #fff;
+    transition: transform 0.8s ease;
+    position: relative;
+
+}
+#open-comment-form {
+    transform: scale(1);
+    pointer-events: auto;
+}
+#close-comment-form {
+    pointer-events: none;
+    transform: scale(0);
+}
+.close-comment-btn {
+    cursor: pointer;
+     position: absolute;
+     right: 5px;
+     top:5px;
+     font-size: 25px;
+}
+.comment-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.comment-field {
+    width: 100%;
+    position: relative;
+    margin-bottom: 50px;
+
+}
+.comment-field span {
+pointer-events: none;
+    font-size: 13px;
+    position: absolute;
+    top:50%;
+    left:12.5px;
+   transform: translateY(-50%);
+   color: #555;
+   transition: 0.3s ease;
+
+}
+.comment-form-field {
+    width: 100%;
+}
+
+.comment-input {
+    width: 100%;
+    padding:8px 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #ccc;
+    transition: 0.3s ease;
+}
+.activated-input {
+    border: 1px solid #3f00ff;  
+    transition: 0.3s ease;
+  }
+  .comment-field .activated-placeholder {
+    position: absolute;
+    top:1px;
+    left: 5px;
+    background-color: #fff;
+    font-size: 10px;
+    color: #3f00ff;
+    transition: 0.3s ease;
+}
+.upload-area-field {
+   padding:0 7px; 
+ 
+
+}
+.upload-img-title {
+    margin-bottom: 8px;
+}
+.image-area {
+border: 2px dashed black;
+height: 100%;
+display: flex;
+padding: 10px 0;
+align-items: center;
+flex-direction: column;
+position: relative;
+
+}
+.upload-image-icon {
+    font-size: 80px;
+}
+.image-area h2 {
+    font-size: 16px;
+}
+.comment-col-2{
+    width: calc(100% );
+}
+.comment-col-1 {
+    width: calc(100% / 3);
+}
+.upload-image {
+    padding: 8px 2rem ;
+    border: none;
+    background-color: #dda0dd;
+    color:#fff;
+    cursor: pointer;
+    
+}
+.comment-img {
+    position: absolute;
+width: calc(100% + 4px);
+height: calc(100% + 4px);
+    top:-2px;
+
+    z-index: -1;
+    display: none;
+}
+.comment-text {
+    width: 100%;
+    margin-top:10px;
+   
+}
+#message {
+    height: 100px;
+resize: none;
+word-break: break-word;
+}
+.send-message {
+    background-color: #0d6efd;
+    color: white;
+    border: 0;
+    padding: 8px 1rem;
+    border-radius: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+
+}
+.delete-img-btn {
+    cursor: pointer;
+    position: absolute;
+    top:5px;
+    right:5px;
+    width: 35px;
+    height: 35px;
+    font-size: 35px;
+    background: none;
+    color: #fff;
+    border: none;
+    z-index: -1;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:991px) {
+    .comment-form {
+        width: 95%;
+    }
+    .comment-col-2,.comment-col-1 {
+        width: 100%;
+    }
+    .upload-area-field {
+        height: 200px;
+        padding: 0;
+    }
+    .send-message {
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width:825px) {
+    .slide-container {
+        margin-top: 159px;
+        width: 95%;
+       padding: 50px 5px;
+    }
+   
+    
+}

@@ -1,0 +1,48 @@
+.text-w-40 {
+    width: 40%;
+}
+#cartInfo {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+.confirm-shopping {
+    background-color: 	#FF8C00;
+    border: 0;
+    width: 100%;
+    padding: 5px 0;
+    font-size: 15px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: 0.2s;
+    outline: none;
+
+  
+}
+.confirm-shopping:hover {
+    opacity: 0.9;
+}
+.payment-buttons {
+    margin-top: 15px;
+}
+
+#moveDown {
+    margin: 200px auto;
+}
+#addressHeight {
+    height: 150px;
+}
+.address-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+.address-buttons button {
+    background-color: #006400;
+    padding: 8px 1.5rem;
+    border: 0;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+}

@@ -1,0 +1,21 @@
+.no-prod-found {
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    text-align: center;
+    display: block;
+font-size: clamp(1rem, 3vw, 2.5rem);
+    margin: 10px 0;
+}
+.category-products {
+    margin-top: 159px;
+}
+
+.product-not-found-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+.no-prod-found-img {
+    width: 75%;
+}
