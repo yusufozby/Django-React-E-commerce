@@ -1,5 +1,6 @@
 from django.urls import path,re_path
 from .views import  index, categoryById, productById
+from django.views.generic import TemplateView
 urlpatterns = [
    
     path("",index),
@@ -14,7 +15,8 @@ urlpatterns = [
     path("announcements",index),
     path("cart",index),
     path("paymentform",index),
-   re_path(".*",index,name="index")
+     re_path('', TemplateView.as_view(template_name='index.html'))
+
    
 
      
