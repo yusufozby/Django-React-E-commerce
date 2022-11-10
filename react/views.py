@@ -9,5 +9,8 @@ def index(request):
 def categoryById(request,cat):
     return render(request,"index.html",{"cat":cat})
 def productById(request,id):
-    return render(request,"index.html",{"id":id})        
+    return render(request,"index.html",{"id":id})  
+def images(request,img):
+    return render(request,"index.html",{"img":img})  
+
     
