@@ -1,10 +1,10 @@
 from django.urls import path,re_path
-from .views import  index, categoryById, productById
+from .views import  index, categoryById, productById,images
 from django.views.generic import TemplateView
 urlpatterns = [
    
     path("",index),
-   
+     path("images/<str:img>",images),
     path("register/",index),
     path("login/",index),
     path("categories/",index),
