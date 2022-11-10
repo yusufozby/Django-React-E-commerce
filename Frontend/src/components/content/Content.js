@@ -140,7 +140,7 @@ const Content = () => {
       data.latestProducts.map((prod)=>(
       <div key={prod.id} className='column'>
          <div className='product-card'>
-         <a href={ localStorage.getItem("user") !== null ?'/product/'+prod.id : "/login"}>  <img className='product-img' alt='' src={'http://localhost:8000/'+prod.img}/> </a>
+         <a href={ localStorage.getItem("user") !== null ?'/product/'+prod.id : "/login"}>  <img className='product-img' alt='' src={prod.img}/> </a>
           <div className='product-card-body'>
        <strong className='product-name'>{prod.product}</strong>
 
