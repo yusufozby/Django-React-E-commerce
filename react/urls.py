@@ -4,7 +4,7 @@ from django.views.generic import TemplateView
 urlpatterns = [
    
     path("",index),
-     path("images/<str:img>",images),
+
     path("register/",index),
     path("login/",index),
     path("categories/",index),
